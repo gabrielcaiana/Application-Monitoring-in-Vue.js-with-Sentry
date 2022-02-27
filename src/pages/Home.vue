@@ -7,6 +7,7 @@
 
 <script setup>
 const checkout = () => {
-  throw new Error("Checkout is not yet implemented");
+  alert("Checking out items!");
+  // throw new Error("Checkout is not yet implemented");
 };
 </script>
