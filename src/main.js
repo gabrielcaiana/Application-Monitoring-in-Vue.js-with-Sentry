@@ -14,6 +14,7 @@ Sentry.init({
   // this line displays the error logs in the console, if false nothing will be displayed in the console
   // value default is false
   logErrors: true,
+  release: __SENTRY_RELEASE__,
   integrations: [
     new BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
