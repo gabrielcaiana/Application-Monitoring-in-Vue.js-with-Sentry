@@ -15,6 +15,7 @@ Sentry.init({
   // value default is false
   logErrors: true,
   release: __SENTRY_RELEASE__,
+  environment: import.meta.env.MODE,
   integrations: [
     new BrowserTracing({
       routingInstrumentation: Sentry.vueRouterInstrumentation(router),
