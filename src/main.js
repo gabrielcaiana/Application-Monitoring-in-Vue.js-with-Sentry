@@ -30,3 +30,9 @@ Sentry.init({
 
 app.use(router);
 app.mount("#app");
+
+const user = {
+  email: "gabrielcaianaguedes@gmail.com",
+};
+Sentry.setUser(user);
+Sentry.configureScope((scope) => scope.setUser(null));
